@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PackageId>Wkhtmltoimage.Net</PackageId>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+		<Version>1.0.0</Version>
+		<Authors>sash</Authors>
+		<Description>This project implements the library wkhtmltoimage for asp net core, working in windows, macos, linux. It saves web page by link into local jpg/png image file.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Executables\Linux" />
+      <Folder Include="Executables\Mac" />
+      <Folder Include="Executables\WIndows" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="6.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    </ItemGroup>
+
+</Project>
